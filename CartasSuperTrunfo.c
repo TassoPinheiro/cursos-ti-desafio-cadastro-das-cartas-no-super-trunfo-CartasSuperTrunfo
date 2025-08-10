@@ -4,7 +4,7 @@ int main(){
 
 // Desafio Super Trunfo - Países
 
-// Tema 1 - cadastro de cartas
+// Tema 1 - cadastro de cartas (2 cartas)
 
 // carta 1
 // Estado (char[]): ceará
