@@ -25,7 +25,7 @@ int main(){
 // Números de pontos turísticos (int): 17
 
     int populacao1, turisticos1, populacao2, turisticos2;
-    float area1, pib1, area2, pib2, densidadepop1, densidadepop2, pibper1, pibper2; 
+    float area1, pib1, area2, pib2, densidadepop1, densidadepop2, pibper1, pibper2, superpoder1, superpoder2; 
     char estado1, estado2;
     char carta1[50], cidade1[50], carta2[50], cidade2[50];
 
@@ -90,6 +90,10 @@ int main(){
     pibper1 = (float) pib1 / populacao1;
     printf("PIB per capita: %.2f\n", pibper1);
 
+    //Super poder é a soma dos atributos ( população, área, PIB, pontos turísticos, (inverso da densidade pop.) e PIB per capita).
+    superpoder1 = populacao1 + area1 + pib1 + turisticos1 + (1 / densidadepop1) + pibper1;
+    printf("Super Poder: %.2f\n", superpoder1); 
+
     printf("\nCarta 2 \n");
     printf("Estado: %c\n", estado2);
     printf("Código da Carta: %s\n", carta2);
@@ -103,6 +107,10 @@ int main(){
     printf("Densidade populacional: %.2f\n", densidadepop2);
     pibper2 = (float) pib2 / populacao2;
     printf("PIB per capita: %.2f\n", pibper2);
+
+    //Super poder é a soma dos atributos ( população, área, PIB, pontos turísticos, (inverso da densidade pop.) e PIB per capita).
+    superpoder2 = populacao2 + area2 + pib2 + turisticos2 + (1 / densidadepop2) + pibper2;
+    printf("Super Poder: %.2f\n", superpoder2); 
 
     return 0;
 }
