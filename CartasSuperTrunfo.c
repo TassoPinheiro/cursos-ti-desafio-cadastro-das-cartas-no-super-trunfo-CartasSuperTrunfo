@@ -112,5 +112,27 @@ int main(){
     superpoder2 = populacao2 + area2 + pib2 + turisticos2 + (1 / densidadepop2) + pibper2;
     printf("Super Poder: %.2f\n", superpoder2); 
 
+    //acrescentando as variáveis de comparação das cartas
+    int vencedor_populacao, vencedor_area, vencedor_PIB, vencedor_turistico, vencedor_densidade, vencedor_PIBper, vencedor_super;
+
+    printf("\nCOMPARAÇÃO DE CARTAS: \n");
+    printf("1 = CARTA 1 VENCE\n");
+    printf("0 = CARTA 2 VENCE\n");
+
+    vencedor_populacao = populacao1 > populacao2;
+    printf("\nPopulação: %d\n", vencedor_populacao);
+    vencedor_area = area1 > area2;
+    printf("Área: %d\n", vencedor_area);
+    vencedor_PIB = pib1 > pib2;
+    printf("PIB: %d\n", vencedor_PIB);
+    vencedor_turistico = turisticos1 > turisticos2;
+    printf("Pontos turísticos: %d\n", vencedor_turistico);
+    vencedor_densidade = densidadepop1 < densidadepop2;
+    printf("Densidade: %d\n", vencedor_densidade);
+    vencedor_PIBper = pibper1 > pibper2;
+    printf("PIB per capita: %d\n", vencedor_PIBper);
+    vencedor_super = superpoder1 > superpoder2;
+    printf("Super poder: %d\n", vencedor_super);
+    
     return 0;
 }
